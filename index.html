@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | Official Artist Website</title>
+  <meta name="description" content="Official website of YOUR NAME. Stream releases, bookings and contact.">
+  <style>
+    :root { --bg:#000; --text:#fff; --muted:#aaa; --accent:#fff; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: Helvetica, Arial, sans-serif; line-height: 1.5; }
+    a { color: var(--text); text-decoration: none; }
+    a:hover { opacity: .7; }
+
+    /* Top bar: nav + social links */
+    header { display: flex; justify-content: space-between; align-items: center; padding: 16px 32px; flex-wrap: wrap; gap: 12px; }
+    header nav a { margin-right: 20px; letter-spacing: 2px; font-size: 14px; text-transform: uppercase; }
+    .social a { margin-left: 14px; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; }
+
+    /* Hero */
+    .hero img { width: 100%; max-height: 520px; object-fit: cover; display: block; }
+    .logo { text-align: center; padding: 40px 16px 16px; }
+    .logo img { max-width: 420px; width: 80%; }
+    .logo h1 { font-size: clamp(40px, 8vw, 96px); letter-spacing: 8px; text-transform: uppercase; }
+
+    /* Streaming links */
+    .streaming { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; padding: 16px; }
+    .streaming a { border: 1px solid var(--text); padding: 10px 22px; text-transform: uppercase; font-size: 13px; letter-spacing: 2px; }
+    .streaming a:hover { background: var(--text); color: var(--bg); opacity: 1; }
+
+    section { max-width: 900px; margin: 0 auto; padding: 48px 20px; text-align: center; }
+    h2 { text-transform: uppercase; letter-spacing: 4px; margin-bottom: 20px; font-size: 22px; }
+
+    /* Newsletter */
+    form { display: flex; flex-direction: column; gap: 12px; max-width: 420px; margin: 20px auto 0; }
+    input { padding: 12px; background: transparent; border: 1px solid var(--muted); color: var(--text); font-size: 15px; }
+    button { padding: 12px; background: var(--text); color: var(--bg); border: 0; text-transform: uppercase; letter-spacing: 2px; cursor: pointer; }
+
+    /* Latest release embed */
+    .embed iframe { width: 100%; height: 352px; border: 0; border-radius: 12px; }
+
+    /* Footer / contact */
+    footer { border-top: 1px solid #222; padding: 40px 20px; text-align: center; }
+    footer .cols { display: flex; flex-wrap: wrap; justify-content: center; gap: 48px; margin-bottom: 24px; }
+    footer h3 { text-transform: uppercase; letter-spacing: 3px; font-size: 14px; margin-bottom: 6px; }
+    footer p.small { color: var(--muted); font-size: 12px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav><a href="#">Home</a></nav>
+    <div class="social">
+      <a href="https://instagram.com/">Instagram</a>
+      <a href="https://youtube.com/">YouTube</a>
+      <a href="https://tiktok.com/">TikTok</a>
+    </div>
+  </header>
+
+  <!-- Hero image: replace with your own photo -->
+  <div class="hero">
+    <img src="images/hero.jpg" alt="Artist performing live">
+  </div>
+
+  <!-- Logo: use an image or just text -->
+  <div class="logo">
+    <h1>Your Name</h1>
+    <!-- <img src="images/logo.png" alt="Your Name logo"> -->
+  </div>
+
+  <div class="streaming">
+    <a href="https://open.spotify.com/">Spotify</a>
+    <a href="https://www.beatport.com/">Beatport</a>
+    <a href="https://soundcloud.com/">SoundCloud</a>
+    <a href="https://youtube.com/">YouTube</a>
+  </div>
+
+  <section class="embed" id="latest">
+    <h2>Latest Release</h2>
+    <!-- Paste a Spotify/SoundCloud/YouTube embed code here -->
+    <iframe src="https://open.spotify.com/embed/track/YOUR_TRACK_ID" allow="encrypted-media" loading="lazy"></iframe>
+  </section>
+
+  <section id="newsletter">
+    <h2>Subscribe to my newsletter</h2>
+    <p>Sign up to receive news, updates and special goodies</p>
+    <!-- Free form backend options: Formspree, Getform, Mailchimp embed -->
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer id="contact">
+    <h2>Contact</h2>
+    <div class="cols">
+      <div>
+        <h3>Publisher</h3>
+        <a href="mailto:publisher@example.com">publisher@example.com</a>
+      </div>
+      <div>
+        <h3>Bookings</h3>
+        <a href="mailto:bookings@example.com">bookings@example.com</a>
+      </div>
+    </div>
+    <p class="small">&copy; 2026 YOUR NAME. Official website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
